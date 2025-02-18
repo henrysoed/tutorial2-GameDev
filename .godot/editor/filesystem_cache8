@@ -1,7 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739690805
-default_env.tres::Environment::784183765299159521::1739690630::0::1::::<><>::
-::res://assets/::1739690630
+::res://::1739869458
+default_env.tres::Environment::784183765299159521::1739690917::0::1::::<><>::
+README.md::TextFile::-1::1739869022::0::1::::<><>::
+::res://assets/::1739690808
 fasilkom.png::CompressedTexture2D::7716203008561212981::1739690630::1739690808::1::::<><>::
 icon.png::CompressedTexture2D::7346330604504066256::1739690630::1739690808::1::::<><>::
 meteorBrown_big1.png::CompressedTexture2D::5959276255885206097::1739690630::1739690808::1::::<><>::
@@ -9,9 +10,9 @@ playerShip1_blue.png::CompressedTexture2D::7616533849599883667::1739690630::1739
 playerShip1_green.png::CompressedTexture2D::2001637748197818689::1739690630::1739690808::1::::<><>::
 snow.png::CompressedTexture2D::4888826356960029576::1739690630::1739690808::1::::<><>::
 stone.png::CompressedTexture2D::6534652574608454091::1739690630::1739690808::1::::<><>::
-::res://scenes/::1739690630
-BlueShip.tscn::PackedScene::211729922060446004::1739690630::0::1::::<><>::uid://dgrrg14sgp4f4::::res://assets/playerShip1_blue.png
-MainLevel.tscn::PackedScene::5012948746790269291::1739690630::0::1::::<><>::uid://y5a4e3ajuy2r::::res://scenes/StonePlatform.tscn<>uid://datfp8kxjrjg::::res://scenes/BlueShip.tscn<>res://scenes/PlatformBlue.gd<>res://scenes/ObjectiveArea.gd
+::res://scenes/::1739690917
+BlueShip.tscn::PackedScene::211729922060446004::1739690917::0::1::::<><>::uid://dgrrg14sgp4f4::::res://assets/playerShip1_blue.png
+MainLevel.tscn::PackedScene::5012948746790269291::1739690916::0::1::::<><>::uid://y5a4e3ajuy2r::::res://scenes/StonePlatform.tscn<>uid://datfp8kxjrjg::::res://scenes/BlueShip.tscn<>res://scenes/PlatformBlue.gd<>res://scenes/ObjectiveArea.gd
 ObjectiveArea.gd::GDScript::-1::1739690630::0::1::::<>Area2D<>::
 PlatformBlue.gd::GDScript::-1::1739690630::0::1::::<>Node2D<>::
-StonePlatform.tscn::PackedScene::1746515621318578487::1739690630::0::1::::<><>::uid://c0do1j2bc1edf::::res://assets/stone.png
+StonePlatform.tscn::PackedScene::1746515621318578487::1739690917::0::1::::<><>::uid://c0do1j2bc1edf::::res://assets/stone.png

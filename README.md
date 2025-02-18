@@ -23,6 +23,20 @@ Latihan: Memanipulasi Node dan Scene
    - StaticBody2D: Node ini digunakan untuk objek yang tidak bergerak dan tidak terpengaruh oleh sistem fisika. Biasanya digunakan untuk elemen lingkungan seperti dinding, lantai, atau platform tetap. Karena StaticBody2D tidak mengalami perubahan posisi akibat gaya eksternal, maka objek lain yang bertabrakan dengannya akan bereaksi terhadap tumbukan, tetapi StaticBody2D sendiri tetap diam. Dalam hal ini, StonePlatform menggunakan StaticBody2D karena berfungsi sebagai platform yang tidak bergerak di dalam level.
 
 3. Ubah nilai atribut Mass pada tipe RigidBody2D secara bebas di scene BlueShip, lalu coba jalankan scene MainLevel. Apa yang terjadi?
+
+   Secara logika, jika Mass diperbesar, kapal akan menjadi lebih berat dan lebih sulit untuk digerakkan oleh gaya luar (misalnya tabrakan atau gravitasi). Jika Mass diperkecil, kapal akan lebih mudah terpengaruh oleh gaya luar.
+   
+   Namun pada kenyataannya, setelah saya coba mengubah masa menjadi 1 kg dan 1000 kg tidak terlalu terlihat perbedaan nya.
+
 4. Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?
+
+   Jika atribut Disabled = true, maka StonePlatform tidak memiliki collision dan objek lain (termasuk BlueShip) akan bisa melewatinya tanpa ada tabrakan.
+
 5. Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?
+   - Position: Mengubah posisi kapal di viewport.
+   - Rotation: Memutar kapal sesuai sudut yang diberikan.
+   - Scale: Memperbesar atau memperkecil ukuran kapal.
+
 6. Pada scene MainLevel, perhatikan nilai atribut Position node PlatformBlue, StonePlatform, dan StonePlatform2. Mengapa nilai Position node StonePlatform dan StonePlatform2 tidak sesuai dengan posisinya di dalam scene (menurut Inspector) namun visualisasinya berada di posisi yang tepat?
+
+   Nilai Position node StonePlatform dan StonePlatform2 relatif terhadap parent-nya (PlatformBlue). Karena mereka adalah child dari PlatformBlue, posisinya dihitung relatif terhadap parent, bukan terhadap MainLevel.
