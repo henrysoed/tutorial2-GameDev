@@ -13,7 +13,15 @@ Iya, karena scene ObjectiveArea berkoneksi dengan signal body_entere untuk mende
 
 Latihan: Memanipulasi Node dan Scene
 1. Scene BlueShip dan StonePlatform sama-sama memiliki sebuah child node bertipe Sprite. Apa fungsi dari node bertipe Sprite?
+
+   Node bertipe Sprite2D digunakan untuk menampilkan gambar atau tekstur pada game. Dalam hal ini, node Sprite2D pada BlueShip dan StonePlatform berfungsi untuk menampilkan gambar kapal (playerShip1_blue.png) dan platform batu (stone.png).
+
 2. Root node dari scene BlueShip dan StonePlatform menggunakan tipe yang berbeda. BlueShip menggunakan tipe RigidBody2D, sedangkan StonePlatform menggunakan tipe StaticBody2D. Apa perbedaan dari masing-masing tipe node?
+
+   - RigidBody2D: Node ini digunakan untuk objek yang dipengaruhi oleh sistem fisika dalam Godot. Artinya, objek dengan RigidBody2D akan bereaksi terhadap gaya seperti gravitasi, tumbukan, dan gaya luar lainnya. Objek ini dapat bergerak secara dinamis sesuai dengan hukum fisika. Dalam kasus BlueShip, penggunaan RigidBody2D memungkinkan kapal bergerak secara bebas dalam dunia game, baik karena input pemain maupun karena interaksi dengan objek lain.
+
+   - StaticBody2D: Node ini digunakan untuk objek yang tidak bergerak dan tidak terpengaruh oleh sistem fisika. Biasanya digunakan untuk elemen lingkungan seperti dinding, lantai, atau platform tetap. Karena StaticBody2D tidak mengalami perubahan posisi akibat gaya eksternal, maka objek lain yang bertabrakan dengannya akan bereaksi terhadap tumbukan, tetapi StaticBody2D sendiri tetap diam. Dalam hal ini, StonePlatform menggunakan StaticBody2D karena berfungsi sebagai platform yang tidak bergerak di dalam level.
+
 3. Ubah nilai atribut Mass pada tipe RigidBody2D secara bebas di scene BlueShip, lalu coba jalankan scene MainLevel. Apa yang terjadi?
 4. Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?
 5. Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?
