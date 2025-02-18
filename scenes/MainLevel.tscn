@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cdoksexcakmop"]
+[gd_scene load_steps=8 format=3 uid="uid://cdoksexcakmop"]
 
 [ext_resource type="PackedScene" uid="uid://y5a4e3ajuy2r" path="res://scenes/StonePlatform.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://datfp8kxjrjg" path="res://scenes/BlueShip.tscn" id="2"]
 [ext_resource type="Script" path="res://scenes/PlatformBlue.gd" id="3"]
 [ext_resource type="Script" path="res://scenes/ObjectiveArea.gd" id="4"]
+[ext_resource type="PackedScene" uid="uid://b6nl3ikb4pt40" path="res://scenes/NewShip.tscn" id="5_8wmgu"]
+[ext_resource type="Script" path="res://scenes/objective_area_2.gd" id="6_m7v3l"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(138.75, 79)
@@ -30,4 +32,25 @@ script = ExtResource("4")
 position = Vector2(70.625, 40)
 shape = SubResource("1")
 
+[node name="NewShip" parent="." instance=ExtResource("5_8wmgu")]
+position = Vector2(294, 421)
+
+[node name="ObjectiveArea2" type="Area2D" parent="."]
+script = ExtResource("6_m7v3l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectiveArea2"]
+position = Vector2(304, 43)
+shape = SubResource("1")
+
+[node name="PlatformBlue2" type="Node2D" parent="."]
+position = Vector2(35, 565)
+script = ExtResource("3")
+
+[node name="StonePlatform" parent="PlatformBlue2" instance=ExtResource("1")]
+position = Vector2(224, 0)
+
+[node name="StonePlatform2" parent="PlatformBlue2" instance=ExtResource("1")]
+position = Vector2(294, 0)
+
 [connection signal="body_entered" from="ObjectiveArea" to="ObjectiveArea" method="_on_ObjectiveArea_body_entered"]
+[connection signal="body_entered" from="ObjectiveArea2" to="ObjectiveArea2" method="_on_ObjectiveArea_body_entered"]
