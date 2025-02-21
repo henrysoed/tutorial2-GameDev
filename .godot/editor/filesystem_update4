@@ -1,7 +1,0 @@
-res://default_env.tres
-res://scenes/BlueShip.tscn
-res://scenes/MainLevel.tscn
-res://scenes/StonePlatform.tscn
-res://README.md
-res://scenes/NewShip.tscn
-res://scenes/objective_area_2.gd

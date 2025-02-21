@@ -26,7 +26,7 @@ Latihan: Memanipulasi Node dan Scene
 
    Secara logika, jika Mass diperbesar, kapal akan menjadi lebih berat dan lebih sulit untuk digerakkan oleh gaya luar (misalnya tabrakan atau gravitasi). Jika Mass diperkecil, kapal akan lebih mudah terpengaruh oleh gaya luar.
    
-   Namun pada kenyataannya, setelah saya coba mengubah masa menjadi 1 kg dan 1000 kg tidak terlalu terlihat perbedaan nya.
+   Namun pada kenyataannya, setelah saya coba mengubah masa menjadi 1 kg dan 1000 kg tidak terlalu terlihat perbedaan nya. Hal ini terjadi karena platform yang bergerak merupakan StaticBody, yang berarti tidak terpengaruh oleh sistem fisika dan tidak mengalami reaksi terhadap berat kapal. Dengan kata lain, meskipun massa BlueShip berubah, efeknya tidak terlihat karena pergerakan kapal ditentukan oleh platform yang tetap bergerak secara independen dari sistem fisika di dalam game.
 
 4. Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?
 
